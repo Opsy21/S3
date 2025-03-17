@@ -1,0 +1,247 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../images/background.jpg') no-repeat center center/cover; /* Change image path */
+    color: #333;
+}
+
+/* Navigation Bar - Improve Visibility */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul li a {
+    background: #6c757d; /* Neutral gray */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #5a6268; /* Slightly darker on hover */
+    transform: scale(1.05);
+}
+
+
+/* Center the Login Box More Accurately */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Adjusted height for better centering */
+    margin-top: -50px; /* Moves the login box higher */
+}
+
+/* Login Form Styling */
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+/* Center the Main Title */
+header h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #333; /* Darker text for better readability */
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Admin Portal Button Styling - Smaller & Centered */
+.admin-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px; /* Smaller box */
+    margin: 50px auto; /* Centered */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style Only Admin Buttons */
+.admin-buttons button {
+    background: #343a40; /* Darker Gray */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0; /* Spacing between buttons */
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.admin-buttons button:hover {
+    background: #23272b; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
+/* Center the Student Upload Form */
+.student-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px; /* Adjust width for a balanced look */
+    margin: 50px auto; /* Center the box */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Light background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Style the Upload Button & File Input */
+.student-upload input[type="file"] {
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.student-upload button {
+    background: #6c757d; /* Neutral gray */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.student-upload button:hover {
+    background: #5a6268; /* Darker gray on hover */
+    transform: scale(1.05);
+}
+
+/* Dark Mode Styling */
+.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode nav {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.dark-mode button, .dark-mode nav ul li a {
+    background: #343a40;
+}
+
+.dark-mode button:hover, .dark-mode nav ul li a:hover {
+    background: #23272b;
+}
+
+/* Portal Buttons - Horizontal Layout */
+.portal-buttons {
+    display: flex;
+    justify-content: center; /* Centers the buttons */
+    gap: 15px; /* Adds space between buttons */
+    margin-top: 20px;
+}
+
+.portal-buttons li {
+    list-style: none;
+}
+
+.portal-buttons li a {
+    background: #6c757d; /* Neutral gray */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.portal-buttons li a:hover {
+    background: #5a6268; /* Darker gray on hover */
+    transform: scale(1.05);
+}
